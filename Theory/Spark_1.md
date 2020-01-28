@@ -1,5 +1,7 @@
 # Spark
 
+<br>
+
 - 미들웨어: RDBMS, Spark
 - Spark: 빅데이터 (일반 대용량 데이터보다 훨씬 많은 양)
 - RDBMS: 일반 대용량 데이터를 보관하는 데이터베이스 (분산 병렬 처리)
@@ -12,7 +14,11 @@
   - 처리 기술이 좋으나 저장이 없어서, 하둡의 저장기능을 가져와서 처리를 스파크로 쓰면 처리 속도가 100배가 빠르다.
   - 맵리듀스(처리)를 보완한 것이 스파크
 
+<br>
+
 ---
+
+<br>
 
 - Spark를 회사 내에서 쓰인다 하면 '스칼라' 공부는 필수 병행해야 함.
 - 간단한 것은 스파크의 ML 라이브러리를 사용하면 좋음.
@@ -21,7 +27,11 @@
 - 아파치 스파크
 - 스파크 스트리밍: 서버에서 바로 영상이나 미디어 정보를 구축하게 하는 것 (다운로드 받지 않고!), 저렴한 가격에 미디어 서비스를 구축할 수 있다.
 
+<br>
+
 ---
+
+<br>
 
 - 아마존 서버 로그인
 - 푸티 접속 계정 (주소 적고, 포트 번호, 푸티 비밀번호 입력 후 실행)
@@ -29,29 +39,25 @@
 
 <br>
 
+<br>
+
 ## Linux
 
+<br>
+
 - $ (명령어 입력 신호)
-
 - pwd 확인
-
 - clear: 화면 다 지워짐
-
 - man ls: 추가 상세 설명 보고 싶을 때
-
 - ls -al: 있는 것들 보임
-
 - mkdir test
-
 - ls
-
 - ./test
-
 - test (위와 동일)
-
 - ls
-
 - cd /opt/spark
+
+<br>
 
 - sudo
 
@@ -75,7 +81,11 @@
 
 <br>
 
+<br>
+
 ## Scala
+
+<br>
 
 - scala> 창이 뜬다.
 
@@ -104,7 +114,9 @@
 
 - 확장자는 스칼라로 저장하고, 스칼라 명령으로 실행하면 됨.
 
-- scala에서 class 생성
+<br>
+
+- **scala에서 class 생성**
 
   ```scala
   class Test{
@@ -129,9 +141,16 @@
   Array로 만든 것 값 변경도 가능하지만,
   List는 변경 불가 (파이썬의 튜플과 비슷)
   
+  ```
+
+<br>
+
 단, Araay라도 값이 val 로 형성된 경우에는 값 변경이 불가하다.
   *var: 가변변수 (변경 가능!)
 *val: 상수 (변경 불가!)
+
+<br>
+
   ```
 
   <br>
@@ -154,8 +173,15 @@
   ---
   
   ```
-  conda activate test
-  conda create -n test3 python=3.6 jupyter tensorflow
+<br>
+
+**명령어**
+
+ conda activate test
+ conda create -n test3 python=3.6 jupyter tensorflow
+
+<br>
+
   ```
   
   ```python
@@ -171,6 +197,5 @@
   ## Spark 2.x
   spark = SparkSession.builder.getOrCreate()
   ```
-  
-  
-  
+
+  <br>
