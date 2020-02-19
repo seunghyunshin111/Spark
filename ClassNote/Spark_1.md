@@ -142,6 +142,36 @@
   
   ### MLLib를 Python으로 불러오기 위해서 Pyspark를 사용해야 한다.
   
+  - 스칼라 나가기: ctrl + c 
+  - 모든 명령 프롬프트는 일단 exit을 눌러보기
+  
+  <br>
+  
+  - 스파크 환경에서 /opt/spark
+  - spark-shell: scala 기반을 불러오기
+  - pyspark: 스파크 기반을 불러오는 것
+  
+  ---
+  
+  ```
+  conda activate test
+  conda create -n test3 python=3.6 jupyter tensorflow
+  ```
+  
+  ```python
+  import findspark
+  findspark.init("/opt/spark")
+  
+  # 프롬프트 pip install pyspark=2.3.2
+  import pyspark
+  from pyspark.sql import SparkSession
+  
+  pyspark.__version__
+  
+  ## Spark 2.x
+  spark = SparkSession.builder.getOrCreate()
+  ```
+  
   
   
   
