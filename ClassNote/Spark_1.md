@@ -83,9 +83,9 @@
 
   :변수 a를 int로 설정하고 1로 초기화
 
-- var: 가변변수
+- var: 가변변수 (variable)
 
-- val: 상수 (한번 정하면 못 바꾼다!)
+- val: 상수 (한번 정하면 못 바꾼다!) (value)
 
 - variable / value
 
@@ -93,7 +93,7 @@
 
 - display("hello world")
 
-- 객체 지향을 잘 지원하고, 함수 지향도 잘 지원 하는고, class도 제대로 지원하는 편
+- 객체 지향을 잘 지원하고, 함수 지향도 잘 지원하고, class도 제대로 지원하는 편
 
 - def display(x:string)={println(x)}
 
@@ -128,12 +128,16 @@
   ```scala
   Array로 만든 것 값 변경도 가능하지만,
   List는 변경 불가 (파이썬의 튜플과 비슷)
+  
+단, Araay라도 값이 val 로 형성된 경우에는 값 변경이 불가하다.
+  *var: 가변변수 (변경 가능!)
+*val: 상수 (변경 불가!)
   ```
 
   <br>
-
+  
   ## Python
-
+  
   ### Spark의 MLLib를 Python 기반의 Jupyter notebook을 이용해서 빅데이터 서비스(저장/관리/전처리)를 한다.
   
   ### MLlib를 Python으로 불러오기 위해서 Pyspark를 사용해야 한다.
@@ -167,11 +171,6 @@
   ## Spark 2.x
   spark = SparkSession.builder.getOrCreate()
   ```
-  
-  
-  
-  
-  
   
   
   
