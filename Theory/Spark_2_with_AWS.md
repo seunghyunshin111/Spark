@@ -47,7 +47,7 @@
 
 - TPR: 정답률
 
-- precisio: 정밀도
+- precision: 정밀도
 
 - recall = sensitive
 
